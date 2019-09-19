@@ -2,13 +2,12 @@ require 'sb_admin_2_rails/version'
 require 'sb_admin_2_rails/engine'
 require 'bootstrap'
 require 'font-awesome-sass'
-require 'jquery-rails'
-require 'sass-rails'
 
 module SbAdmin2Rails
   class << self
     def load!
       register_rails_engine if rails?
+      register_sprockets if sprockets?
     end
 
     def gem_path
@@ -32,10 +31,19 @@ module SbAdmin2Rails
       defined?(::Rails)
     end
 
+    def sprockets?
+      defined?(::Sprockets)
+    end
+
     private
 
     def register_rails_engine
       require 'sb_admin_2_rails/engine'
+    end
+
+    def register_sprockets
+      Sprockets.append_path(stylesheets_path)
+      Sprockets.append_path(javascripts_path)
     end
   end
 end
