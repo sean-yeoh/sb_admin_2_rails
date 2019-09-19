@@ -12,12 +12,13 @@
 @import "font-awesome";
 
 // Import Custom SB Admin 2 Mixins and Components
-@import "navs";
+@import "mixins";
 @import "global";
 @import "utilities";
 
 // Custom Components
 @import "dropdowns";
+@import "navs";
 @import "buttons";
 @import "cards";
 @import "charts";
