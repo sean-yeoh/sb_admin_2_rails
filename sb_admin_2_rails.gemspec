@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
-  spec.add_runtime_dependency ''
   spec.add_runtime_dependency "bootstrap", '~> 4.3.1'
   spec.add_runtime_dependency "font-awesome-sass", '~> 5.9.0'
 end
