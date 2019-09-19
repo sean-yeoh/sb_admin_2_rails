@@ -121,6 +121,10 @@
     .sidebar-brand-text {
       display: none;
     }
+    .sidebar-brand-logo img {
+      width: 40px;
+      height: 40px;
+    }
   }
   hr.sidebar-divider {
     margin: 0 1rem 1rem;
@@ -197,6 +201,10 @@
       .sidebar-brand-text {
         display: inline;
       }
+      .sidebar-brand-logo img {
+        width: 40px;
+        height: 40px;
+      }
     }
     .sidebar-heading {
       text-align: left;
@@ -253,6 +261,10 @@
         }
         .sidebar-brand-text {
           display: none;
+        }
+        .sidebar-brand-logo img {
+          width: 40px;
+          height: 40px;
         }
       }
       .sidebar-heading {
