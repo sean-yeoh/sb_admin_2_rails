@@ -3,6 +3,7 @@ require 'sb_admin_2_rails/engine'
 require 'bootstrap'
 require 'font-awesome-sass'
 require 'jquery-rails'
+require 'sass-rails'
 
 module SbAdmin2Rails
   class << self
